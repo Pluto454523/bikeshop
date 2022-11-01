@@ -1,0 +1,53 @@
+created_at
+updated_at
+
+
+// Authentication
+//      Customer : Login & Register
+            id
+            username
+            password
+            firstname
+            lastname
+            telephone
+            address
+            
+
+//      employee : Login & Create account
+            id
+            username
+            password
+            firstname
+            lastname
+            telephone
+            address
+        
+             
+// Product (Bike) data
+    id
+    name
+    price
+    per_order   --  null
+    qty
+
+
+// Product image
+    id
+    product_id    // fk
+    image_source
+
+
+// Sell data
+    id
+    customer_id // fk
+    detail_id // fk   --  null
+    employee_id  // fk   --  null
+    date
+
+// Detail data
+    id
+    product_id // fk
+    sell_id     // fk -- null
+    qty
+    unit
+
